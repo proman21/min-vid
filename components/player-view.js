@@ -256,7 +256,7 @@ module.exports = class Player extends React.Component {
            />);
 
     const notification = this.state.showQueue ? null :
-          this.props.trackAdded ? (<div className="notification fade-in-out">{this.props.strings.trackAddedNotification}</div>) : null;
+          this.props.trackAdded ? (<div className="notification fade-in-out">{this.props.strings.itemAddedNotification}</div>) : null;
 
     if (notification) this.startNotificationTimeout();
 
