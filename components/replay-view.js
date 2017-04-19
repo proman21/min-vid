@@ -22,7 +22,7 @@ module.exports = class ReplayView extends React.Component {
         <div className={cn('exited', {hidden: !this.props.exited || this.props.minimized})}>
           <div className='row'>
             <div className='ended-dialog'>
-              <p>There are no more songs in the queue. {fromHistoryLink}</p>
+              <p>{this.props.strings.endOfQueue}. {fromHistoryLink}</p>
             </div>
             <button className='exit-replay' onClick={this.props.replay.bind(this)}></button>
             <button className='exit-close' onClick={this.close.bind(this)}></button>
